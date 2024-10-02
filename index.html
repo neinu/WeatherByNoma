@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherByNoma</title>
@@ -13,21 +13,29 @@
 <body>
     <div class="weather-app">
     <header>
-        <form action="">
-            <input type="search" placeholder="Enter acity.." required/>
-            <input type="submit" value="search"/>
+        <form class="search-form">
+            <input type="search" placeholder="Enter acity.." required class="search-form-input"/>
+            <input type="submit" value="search" class="searh-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
     <div>
-    <h1>Bulawayo</h1>
-    <p>
+    <h1 class="weather-app-city">Bulawayo</h1>
+    <p class="weather-app-details">
         Tuesday 14:49, scattered clouds
         <br/>
-        Humidity: 66%, Wind: 3.13km/h 
+        Humidity:<strong>66%</strong>, Wind:<strong>3.13km/h</strong> 
     </p>
     </div>
-    <div>⛅12°c</div>
+    <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">⛅</div>
+        <div class="weather-app-temperature">12</div>
+        <div class="weather-app-unit">°C</div>
+        
+    </div>
+    </div>
+    </div>
     
     </main>
     <footer> This Project Coded by
