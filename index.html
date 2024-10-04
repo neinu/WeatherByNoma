@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"> 
     <meta charset="UTF-8">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherByNoma</title>
     <link rel="stylesheet" href="src/style.css">
@@ -23,7 +24,7 @@
     <main>
         <div class="weather-app-data">
     <div>
-    <h1 class="weather-app-city" id="weather-app-city">Bulawayo</h1>
+    <h1 class="weather-app-city" id="weather-app-city"></h1>
     <p class="weather-app-details">
         Tuesday 14:49, scattered clouds
         <br/>
@@ -32,7 +33,7 @@
     </div>
     <div class="weather-app-temperature-container">
         <div class="weather-app-icon">⛅</div>
-        <div class="weather-app-temperature">12</div>
+        <div class="weather-app-temperature" id="temperature"></div>
         <div class="weather-app-unit">°C</div>
         
     </div>
